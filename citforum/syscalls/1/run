@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo '============= main aifle ============='
+main afile
+echo
+echo
+echo
+
+echo '=============== main a ==============='
+main a
+echo
+echo
+echo
+
+echo '=========== main /dev/null ==========='
+main /dev/null
+echo
+echo
+echo
+
+echo '============== main main ============='
+main main
+echo
+echo
+echo
+
+echo '============ main noexists ==========='
+main noexists
+echo
+echo
+echo
+
