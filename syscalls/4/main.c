@@ -45,7 +45,6 @@ int main(int argc, char *argv[])
 	char const *newfn = argv[2];
 
 
-
 	// Open files and set mode
 	int oldfd = egate(open(oldfn, O_RDONLY));
 	struct stat oldst;
@@ -53,7 +52,6 @@ int main(int argc, char *argv[])
 
 	int newfd = egate(open( newfn, O_WRONLY | O_CREAT | O_TRUNC));
 	fchmod(newfd, oldst.st_mode);
-
 
 
 	// Write old file data to new file and close files
@@ -66,7 +64,6 @@ int main(int argc, char *argv[])
 
 	close(oldfd);
 	close(newfd);
-
 
 
 	return 0;
